@@ -1973,7 +1973,7 @@ const bannedwords = [
 client.on('message',  message => {
   if(bannedwords.some(word => message.content.includes(word))) {
     message.delete()
-    message.reply(" احترم نفسك , يمنج الشتايم تمامنا هنا  ").then(msg => {msg.delete(5000)});;
+    message.reply(" احترم نفسك , يمنع الشتايم تمامنا هنا  ").then(msg => {msg.delete(5000)});;
   };
 });
 
@@ -1990,5 +1990,4 @@ client.on('message',  message => {
 
 })
 
-
-client.login("NTM0NDEwOTk2ODIzODgzNzg2.Dx5NCQ.IlHVzGHhZ6pI2YFbKdrS2wEtBl0");
+client.login(process.env.BOT_TOKEN);
